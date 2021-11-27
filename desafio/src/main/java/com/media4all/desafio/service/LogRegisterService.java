@@ -4,5 +4,5 @@ import com.media4all.desafio.model.LogRegister;
 
 public interface LogRegisterService {
 	
-	LogRegister insert (LogRegister logRegister);
+	LogRegister create (LogRegister logRegister);
 }

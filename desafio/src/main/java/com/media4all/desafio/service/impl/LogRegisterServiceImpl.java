@@ -11,10 +11,10 @@ import com.media4all.desafio.service.LogRegisterService;
 public class LogRegisterServiceImpl implements LogRegisterService {
 
 	@Autowired
-    private LogRegisterRepository repo;
+    private LogRegisterRepository repository;
 
     @Override
-    public LogRegister insert(LogRegister logRegister) {
-        return repo.save(logRegister);
+    public LogRegister create(LogRegister logRegister) {
+        return repository.save(logRegister);
     }
 }
