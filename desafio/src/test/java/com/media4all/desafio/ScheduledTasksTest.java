@@ -18,9 +18,9 @@ public class ScheduledTasksTest {
     ScheduledTasks tasks;
 
     @Test
-    public void reportCurrentTime() {
+    public void sendLog() {
         await().atMost(Duration.FIVE_SECONDS).untilAsserted(() -> {
-            verify(tasks, atLeast(2)).reportCurrentTime();
+            verify(tasks, atLeast(2)).sendLog();
         });
     }
 }
