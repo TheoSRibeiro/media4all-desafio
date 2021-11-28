@@ -24,11 +24,10 @@ public class LogRegister implements Serializable {
     private Integer id;
 
     @Column(nullable = false)
-    private LocalDateTime createDate;
+    private String createDate;
 
     @Column(nullable = false)
     private String ip;
 
-    @Column(nullable = false)
     private String content;
 }

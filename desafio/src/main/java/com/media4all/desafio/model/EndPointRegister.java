@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "end_point_register")
+@Table(name = "endpoint_register")
 public class EndPointRegister implements Serializable {
     private static final long serialVersionUID = 1L;
 	
@@ -19,7 +19,7 @@ public class EndPointRegister implements Serializable {
     private Integer id;
 
     @Column(nullable = false)
-    private LocalDateTime createDate;
+    private String createDate;
 
     @Column(nullable = false)
     private String content;
